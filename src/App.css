@@ -56,3 +56,37 @@ form {
 .show-form form {
   display: block;
 }
+
+/* App.css */
+
+.form-container {
+  position: relative;
+}
+
+.autocomplete-results {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.autocomplete-results li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.autocomplete-results li:last-child {
+  border-bottom: none;
+}
+
+.autocomplete-results li:hover {
+  background-color: #ddd;
+  max-height: calc(9 * 2.5em); /* Adjust based on your li height */
+  overflow-y: auto;
+}
